@@ -18,10 +18,10 @@
         <a href="#presentacion" class="contenedor-logo"><div class="logo">Logo</div></a>
         <nav class="d-none d-sm-flex justify-content-end p-3 p-sm-0 nav-desktop">
             <ul class="d-none d-sm-flex justify-content-between align-items-center gap-3 w-sm-100 w-lg-50 mb-0">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#misServicios">Sobre mi</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,8 +35,8 @@
     </nav>
 
     <section id="presentacion">
-        <div class="w-100 d-flex justify-content-end info px-3">
-            <div class="imagenPersona">
+        <div class="w-100 d-flex justify-content-end info px-3  container-sm">
+            <div class="imagenPersona d-sm-none">
                 <img src="./assets/img/Perfil.png" alt="José Gonzalez" class="">
                 <div class="redes">
                     <a href="#"><img src="./assets/img/icons/facebook.svg" alt="facebook"></a>
@@ -48,11 +48,28 @@
                 <h1>José Gonzalez
                     <span>Chef</span>
                 </h1>
-                <h2>Qué me representa</h2>
-                <p>Soy una persona orientada al servicio, me agradan las persona y conocer sus intereses. Soy Administrador Financiero con amplia experiencia comercial en el Área financiera: Créditos y Seguros, Propiedad Raís, Hipotecas, Servicios Jurídicos y Consultorías Administrativas.</p>
+                <h2 class=" d-sm-none">Qué me representa</h2>
+                <p class=" d-sm-none">Soy una persona orientada al servicio, me agradan las persona y conocer sus intereses. Soy Administrador Financiero con amplia experiencia comercial en el Área financiera: Créditos y Seguros, Propiedad Raís, Hipotecas, Servicios Jurídicos y Consultorías Administrativas.</p>
             </div>
         </div>
     </section>
+
+    <div id="imagen" class="container-sm d-none d-sm-flex">
+        <div class="imagenPersona d-flex">
+            <img src="./assets/img/Perfil.png" alt="José Gonzalez" class="persona">
+            <div class="w-100 pt-5">
+                <div>
+                    <h2 class="mb-4">Qué me representa</h2>
+                    <p>Soy una persona orientada al servicio, me agradan las persona y conocer sus intereses. Soy Administrador Financiero con amplia experiencia comercial en el Área financiera: Créditos y Seguros, Propiedad Raís, Hipotecas, Servicios Jurídicos y Consultorías Administrativas.</p>
+                </div>
+                <div class="redes mt-5">
+                    <a href="#"><img src="./assets/img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./assets/img/icons/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./assets/img/icons/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
     <section id="misServicios" class="w-100 d-flex flex-column align-items-center py-5 px-3">
@@ -73,29 +90,32 @@
         </div>
     </section>
 
-    <section id="galeria" class="px-3 py-5">
+    <section id="galeria" class="px-3 py-5 container-sm">
         <div class="img1"> </div>
         <div class="img2"> </div>
         <div class="img3"> </div>
-        <div class="img4"> </div>
+        <div class="img4"> </div> 
         <div class="img5"> </div> 
     </section>
     
-    <section id="contacto" class="p-3 w-100">
+    <section id="contacto" class="p-3 w-100  container-sm">
         <h2>Contactame</h2>
-        <form action="" class="w-100">
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" placeholder="Ej: Juan Cruz Montiel" id="nombre" name="nombre">
-            <label for="asunto">Asunto:</label>
-            <input type="text" placeholder="Ej: Presupuesto para..." id="asunto" name="asunto">
-            <label for="mail">Email:</label>
-            <input type="email" placeholder="Ej: juanxmonti@hotmail.com" id="mail" name="mail">
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ej: Hola Juan Cruz..."></textarea>
-            <div class="d-flex">
-                <input type="submit" value="Enviar" class="btnEnviar">
-            </div>
-        </form>
+        <div class="d-sm-grid grilla-mapa">
+            <form action="" class="w-100">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" placeholder="Ej: Juan Cruz Montiel" id="nombre" name="nombre">
+                <label for="asunto">Asunto:</label>
+                <input type="text" placeholder="Ej: Presupuesto para..." id="asunto" name="asunto">
+                <label for="mail">Email:</label>
+                <input type="email" placeholder="Ej: juanxmonti@hotmail.com" id="mail" name="mail">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ej: Hola Juan Cruz..."></textarea>
+                <div class="d-flex">
+                    <input type="submit" value="Enviar" class="btnEnviar">
+                </div>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26274.76979855363!2d-58.405683200000006!3d-34.5954056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684201838670!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="d-none d-sm-block mapa"></iframe>
+        </div>
     </section>
 
     <footer class="w-100 py-3">
