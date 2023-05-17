@@ -421,6 +421,22 @@ footer p{
     width:24px;
 }
 
+.copy span {
+    display: block;
+}
+
+.infoContacto {
+    max-width: 300px;
+}
+
+@media(min-width:350px){
+    .contenedorCards {
+        grid-auto-columns: 54%;
+    }
+}
+
+
+
 @media(min-width: 576px){
     header{
         background: var(--color-navbar);
@@ -508,4 +524,7 @@ footer p{
         border-radius:16px;
     }
         
+    .copy span {
+        display: inline;
+    }
 }
