@@ -31,6 +31,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body{
@@ -442,7 +443,7 @@ footer p{
         background: var(--color-navbar);
         display: flex;
         justify-content: space-between;
-        position: fixed;
+        position: sticky;
     }
 
     .nav-desktop {
